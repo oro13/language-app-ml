@@ -22,6 +22,8 @@ Back End
 • Python/Numpy/Pandas
 
 
+### Why NLP? Why Recommenders?
+
 While there are many Language Apps available, 
 Totlahtol stands out by offering:
 User Generated Lessons, 
@@ -70,8 +72,9 @@ Doing so allows the app to group similar lessons together, on the fly, enabling:
 User Specific Recommendations based on Activity and Lesson Preferences 
 (through Matrix Factorization and Deep Neural Network)
 
-...
-Why NLP?
+
+---
+### Why NLP?
 
 topic modeling
 checking for duplicate lesson (hasing tokens)
@@ -92,11 +95,9 @@ Topic Modeling with Embedding
   <img src=/media/topics-1-shorten2.gif></img>
 </p>
 
-            
-### Recommendation
-recommendation systems consist of 3 key stages:
+Tag the Lessons with specific topics, to generate more signal for the recommender.
 
-Why Recommenders?
+### Why Recommenders?
 
 Prototype: Sparse Matrix Factorization
 
@@ -106,12 +107,15 @@ Cons: bad with limited data on new users (cold start), inputs restricted to User
 
 Production: Deep Neural Network
 
-
 Recommender Process:
 
 1. item candidate generation
 2. user specific scoring of items
 3. reranking, or sorting the items based on relevance to the user
+
+How we implemented it in flask:
+
+~Suggestions for how to demonstrate?~
 
 
 Takeaways:
