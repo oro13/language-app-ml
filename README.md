@@ -1,4 +1,5 @@
-# language_app_ml
+# Machine Learning Enhanced 
+# Language Learning App
 
 Totlahtol Language App
 
