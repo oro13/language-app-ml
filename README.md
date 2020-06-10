@@ -5,13 +5,17 @@ FELI GENTLE
 
 Totlahtol Language App
 
+<p align="center">
+  <img src=/media/login.gif width='90%' height='50%'>
+</p>
+
 Machine Learning Components (Prototype Development, Research)
 
 Implementing Machine Learning Features in a Language App;
 
 Using Natural Language Processing for Topic Modeling to Understand the Content of User Uploaded Lessons; Using Matrix Factorization and Deep Neural Networks to Make User Specific Recommendations based on Activity and Preferences
 
-*Totlahtol* Languages in Nahuatl, the once widely spoken Aztec ‘Lingua Franca’ of . 
+*Totlahtol* Languages in Nahuatl, the once widely spoken Aztec ‘Lingua Franca’. 
 
 My friend in El Paso began working on this application over a year ago; now I’m helping him bring it to fruition. To help the App stand out, we are making a prototype enhanced with machine learning components. We hope it will excel in for user enjoyment and  provide effective language instruction.
 
