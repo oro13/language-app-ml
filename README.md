@@ -28,6 +28,11 @@ Totlahtol aims to deliver on all these and more.
 My Research has centered on the most important app use case of uplading a lesson and recommending it to users if their activity implies it'd be relevent to them.
 
 1. A user uploads a lesson
+
+<p align="center">
+  <img src=/media/add_lesson.gif width='90%' height='50%'>
+</p>
+
 2. NLP for processing the text and discerning the lesson topics
 3. The lesson specific word and topic embeddings are available for the recommender model
 4. User ratings and lesson activity are made available for the recommender model
