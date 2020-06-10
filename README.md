@@ -2,25 +2,77 @@
 
 
 FELI GENTLE
+
 Totlahtol Language App
+
 Machine Learning Components (Prototype Development, Research)
 
-Implementing Machine Learning Features in a Language App; 
+Implementing Machine Learning Features in a Language App;
+
 Using Natural Language Processing for Topic Modeling to Understand the Content of User Uploaded Lessons; Using Matrix Factorization and Deep Neural Networks to Make User Specific Recommendations based on Activity and Preferences
 
-Totlahtol is the Nahuatl word for Languages, the once widely spoken Aztec ‘Lingua Franca’ of . My friend in El Paso began working on this application over a year ago; now I’m helping him bring it to fruition as a prototype enhanced with machine learning components to help the App stand out, and excel in enjoyment of use and effective language instruction.
+*Totlahtol* Languages in Nahuatl, the once widely spoken Aztec ‘Lingua Franca’ of . 
 
-While there are many Language Apps out there, few, if any, harness the power of User Generated Lessons, Machine Learning accelerated Recommendation of Content specific to User interests and activity, and a interactive, social-network driven user interface to create a personalized and effective way of immersing users in the target language. Totlahtol delivers on all these and more.
+My friend in El Paso began working on this application over a year ago; now I’m helping him bring it to fruition. To help the App stand out, we are making a prototype enhanced with machine learning components. We hope it will excel in for user enjoyment and  provide effective language instruction.
 
-I’ve been focusing on the key data pipeline of 
-A user uploads a lesson
-NLP for processing the text and discerning the lesson topics
-The lesson specific word and topic embeddings are available for the recommender model
-User ratings and lesson activity are made available for the recommender model
-The recommender gets an input of these and other features about the users and lessons
-The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
-These predicted ratings are sorted to find the highest ratings
-When a user opens their feed, these lessons are suggested to them first
+While there are many Language Apps out there, few, if any, harness the power of combining: 
+
+ - User Generated Lessons, 
+ - Machine Learning accelerated Recommendation of Content specific to User interests and activity, and a 
+ - interactive, social-network driven user interface for a personalized immersion the target language. 
+ 
+Totlahtol aims to deliver on all these and more.
+
+## The Data Pipeline
+
+My Research has centered on the most important app use case of uplading a lesson and recommending it to users if their activity implies it'd be relevent to them.
+
+1. A user uploads a lesson
+2. NLP for processing the text and discerning the lesson topics
+3. The lesson specific word and topic embeddings are available for the recommender model
+4. User ratings and lesson activity are made available for the recommender model
+5. The recommender gets an input of these and other features about the users and lessons
+6. The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
+7. These predicted ratings are sorted to find the highest ratings
+8. When a user opens their feed, these lessons are suggested to them first
+
+## ML components
+
+**User Generated Lessons and NLP**
+
+...
+Why NLP?
+
+topic modeling
+checking for duplicate lesson (hasing tokens)
+
+
+Prototype: LDA
+
+Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
+
+**ML Recommender**
+
+Why Recommenders?
+
+...what's available
+
+Prototype: Sparse Matrix Factorization
+
+Pros: quick, reliable when signal is reliable (enough user activity)
+
+Cons: bad with limited data on new users (cold start), inputs restricted to User and Items matrix
+
+Production: Deep Neural Network
+
+### Recommendation
+recommendation systems consist of 3 key stages:
+
+1. item candidate generation
+2. user specific scoring of items
+3. reranking, or sorting the items based on relevance to the user
+
+
 
 Learned a number of libraries, such as Keras/Tensorflow, Gensim, and worked with more familiar Pandas and Numpy, and NLTK
 
@@ -50,11 +102,7 @@ Project links:
 
 overview:
 
-recommendation systems consist of 3 key stages:
 
-1. item candidate generation
-2. user specific scoring of items
-3. reranking, or sorting the items based on relevance to the user
 
 recommender pipeline:
 
