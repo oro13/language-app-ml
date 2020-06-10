@@ -26,9 +26,10 @@ Back End
 
 While there are many Language Apps available, 
 Totlahtol stands out by offering:
-User Generated Lessons, 
-Recommendation of Content specific to User interests and activity, 
-A seamless, interactive user interface to immerse users in the target language. 
+
+- User Generated Lessons, 
+- Recommendation of Content specific to User interests and activity, 
+- A seamless, interactive user interface to immerse users in the target language. 
 
 
 Whether you’re the type of polyglot who speaks Spanish and French or the kind who speaks Python and Javascript, feel free to reach out to learn more.
