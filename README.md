@@ -5,13 +5,17 @@ FELI GENTLE
 
 Totlahtol Language App
 
+<p align="center">
+  <img src=/media/login.gif width='90%' height='50%'>
+</p>
+
 Machine Learning Components (Prototype Development, Research)
 
 Implementing Machine Learning Features in a Language App;
 
 Using Natural Language Processing for Topic Modeling to Understand the Content of User Uploaded Lessons; Using Matrix Factorization and Deep Neural Networks to Make User Specific Recommendations based on Activity and Preferences
 
-*Totlahtol* Languages in Nahuatl, the once widely spoken Aztec ‘Lingua Franca’ of . 
+*Totlahtol* Languages in Nahuatl, the once widely spoken Aztec ‘Lingua Franca’. 
 
 My friend in El Paso began working on this application over a year ago; now I’m helping him bring it to fruition. To help the App stand out, we are making a prototype enhanced with machine learning components. We hope it will excel in for user enjoyment and  provide effective language instruction.
 
@@ -28,6 +32,11 @@ Totlahtol aims to deliver on all these and more.
 My Research has centered on the most important app use case of uplading a lesson and recommending it to users if their activity implies it'd be relevent to them.
 
 1. A user uploads a lesson
+
+<p align="center">
+  <img src=/media/add_lesson.gif width='90%' height='50%'>
+</p>
+
 2. NLP for processing the text and discerning the lesson topics
 3. The lesson specific word and topic embeddings are available for the recommender model
 4. User ratings and lesson activity are made available for the recommender model
@@ -51,6 +60,20 @@ Prototype: LDA
 
 Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
 
+
+Embedding Space
+
+<p align="center">
+  <img src=/media/overview-1-shorten2.gif></img>
+</p>
+
+Topic Modeling with Embedding
+
+<p align="center">
+  <img src=/media/topics-1-shorten2.gif></img>
+</p>
+
+            
 **ML Recommender**
 
 Why Recommenders?
