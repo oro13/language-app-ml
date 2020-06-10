@@ -9,23 +9,47 @@ Totlahtol Language App
   <img src=/media/login.gif width='90%' height='50%'>
 </p>
 
-Machine Learning Components (Prototype Development, Research)
+FELI GENTLE
 
-Implementing Machine Learning Features in a Language App;
+Machine Learning Enhanced Language Learning App 
 
-Using Natural Language Processing for Topic Modeling to Understand the Content of User Uploaded Lessons; Using Matrix Factorization and Deep Neural Networks to Make User Specific Recommendations based on Activity and Preferences
+Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
+My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components, including:
 
-*Totlahtol* Languages in Nahuatl, the once widely spoken Aztec ‘Lingua Franca’. 
+When a user uploads a lesson:
+Model and Embed Word Tokens and Latent Topics of Lessons, to Understand the Content
+(through NLP, LDA, word embeddings, and a Neural Network)
 
-My friend in El Paso began working on this application over a year ago; now I’m helping him bring it to fruition. To help the App stand out, we are making a prototype enhanced with machine learning components. We hope it will excel in for user enjoyment and  provide effective language instruction.
+Doing so allows the app to group similar lessons together, on the fly, enabling:
+User Specific Recommendations based on Activity and Lesson Preferences 
+(through Matrix Factorization and Deep Neural Network)
 
-While there are many Language Apps out there, few, if any, harness the power of combining: 
+While there are many Language Apps available, 
+Totlahtol stands out by offering:
+User Generated Lessons, 
+Recommendation of Content specific to User interests and activity, 
+A seamless, interactive user interface to immerse users in the target language. 
 
- - User Generated Lessons, 
- - Machine Learning accelerated Recommendation of Content specific to User interests and activity, and a 
- - interactive, social-network driven user interface for a personalized immersion the target language. 
- 
-Totlahtol aims to deliver on all these and more.
+Here’s How:
+
+<p align="center">
+  <img src=/media/uml-basic.png width='90%' height='50%'>
+</p>
+
+I’ve been focusing on the key data pipeline of (replace with UML picture when it’s ready)
+A user uploads a lesson
+NLP for processing the text and discerning the lesson topics
+The lesson specific word and topic embeddings are available for the recommender model
+User ratings and lesson activity are made available for the recommender model
+The recommender gets an input of these and other features about the users and lessons
+The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
+These predicted ratings are sorted to find the highest ratings
+When a user opens their feed, these lessons are suggested to them first
+
+Whether you’re the type of polyglot who speaks Spanish and French or the kind who speaks Python and Javascript, feel free to reach out to learn more.
+
+
+---
 
 ## The Data Pipeline
 
