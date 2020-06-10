@@ -57,6 +57,13 @@ Embedding Space
 <p align="center">
   <img src=/media/overview-1-shorten2.gif></img>
 </p>
+
+Topic Modeling with Embedding
+
+<p align="center">
+  <img src=/media/topics-1-shorten2.gif></img>
+</p>
+
             
 **ML Recommender**
 
