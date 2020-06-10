@@ -1,9 +1,8 @@
-# Machine Learning Enhanced 
-## Language Learning App
+# Machine Learning Enhanced Language Learning App
 
-Totlahtol Language App
+## Totlahtol
 
-FELI GENTLE
+### FELI GENTLE
 
 <p align="center">
   <img src=/media/login.gif width='90%' height='50%'>
