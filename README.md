@@ -1,16 +1,11 @@
 # Machine Learning Enhanced Language Learning App
 
-## Totlahtol
-
 ### FELI GENTLE
+
 
 <p align="center">
   <img src=/media/login.gif width='90%' height='50%'>
 </p>
-
-FELI GENTLE
-
-Machine Learning Enhanced Language Learning App 
 
 Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
 My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components.
