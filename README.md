@@ -51,6 +51,12 @@ Prototype: LDA
 
 Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
 
+
+Embedding Space
+
+<p align="center">
+  <img src="/media/overview-1-shorten2.gif></img>
+</p>
 **ML Recommender**
 
 Why Recommenders?
