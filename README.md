@@ -7,7 +7,7 @@ In collaboration with
 
 ### ARMAND VILLAVERDE, [Data Engineer, Full Stack Dev](https://github.com/xochozomatli)
 
-(This app contains research and development for ML and data pipeline. The code base is hosted [here](https://github.com/xochozomatli/totlahtol)
+(This app contains research and development for ML and data pipeline. The code base is hosted [here](https://github.com/xochozomatli/totlahtol))
 ---
 
 Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent and in Central America.
