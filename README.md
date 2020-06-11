@@ -53,7 +53,13 @@ Whether you’re the type of polyglot who speaks Spanish and French or the kind 
 
 My Research has centered on the most important app use case of uplading a lesson and recommending it to users if their activity implies it'd be relevent to them.
 
+In general, a Recommender Needs these Three Steps:
 
+1. item candidate generation
+2. user specific scoring of items
+3. reranking, or sorting the items based on relevance to the user
+
+Our Model has the additional step of processing lessons for its latent topics, to give more signal for the 
 Here’s How:
 
 <p align="center">
@@ -108,8 +114,6 @@ Prototype: LDA
 
 Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
 
-
-
 <p align="center">
   <img src=/media/overview-1-shorten2.gif></img>
   <br><i>Embedding Space using TensorBoard Project</i>
@@ -132,11 +136,7 @@ Cons: bad with limited data on new users (cold start), inputs restricted to User
 
 Production: Deep Neural Network
 
-Recommender Process:
-
-1. item candidate generation
-2. user specific scoring of items
-3. reranking, or sorting the items based on relevance to the user
+---
 
 Takeaways:
 
