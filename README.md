@@ -1,9 +1,26 @@
 # Machine Learning Enhanced Language Learning App
 
-### FELI GENTLE
+### FELI GENTLE, [Machine Learning Engineer](https://github.com/oro13)
+
+In collaboration with
+
+### ARMAND VILLAVERDE, [Data Engineer](https://github.com/xochozomatli)
 
 Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
 My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components.
+
+Tech Stack Tools:
+
+Front End 
+• [React JS](https://github.com/facebook/react)
+• [Flask](https://github.com/pallets/flask)
+
+Back End 
+• [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy)
+• [Keras/Tensorflow](https://github.com/keras-team/keras)
+• [Python](https://github.com/python/)
+• [Numpy](https://github.com/numpy/numpy)
+• [Pandas](https://github.com/pandas-dev/pandas)
 
 The app (prototype) in action:
 
@@ -12,18 +29,6 @@ The app (prototype) in action:
   <br><i>A user logins in, adds a lesson, and gets lessons specifically curated to their interests</i>
 </p>
 
-
-
-Tech used:
-
-Front End 
-• React JS
-• Flask
-
-Back End 
-• SQLAlchemy
-• Keras/Tensorflow
-• Python/Numpy/Pandas
 
 
 ### Why NLP? Why Recommenders?
