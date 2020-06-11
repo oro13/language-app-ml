@@ -50,8 +50,53 @@ Totlahtol stands out by offering:
 Whether you’re the type of polyglot who speaks Spanish and French or the kind who speaks Python and Javascript, feel free to reach out to learn more.
 
 ---
+## ML components
 
-## The Data Pipeline
+### User Generated Lessons and NLP Topic Modeling
+
+When a user uploads a lesson:
+Model and Embed Word Tokens and Latent Topics of Lessons, to Understand the Content
+(through NLP, LDA, word embeddings, and a Neural Network)
+
+Doing so allows the app to group similar lessons together, on the fly, enabling:
+User Specific Recommendations based on Activity and Lesson Preferences 
+(through Matrix Factorization and Deep Neural Network)
+
+
+---
+### Why NLP?
+
+topic modeling
+checking for duplicate lesson (hashing tokens)
+
+Prototype: LDA
+
+Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
+
+<p align="center">
+  <img src=/media/overview-1-shorten2.gif></img>
+  <br><i>Embedding Space using TensorBoard Project</i>
+</p>
+
+<p align="center">
+  <img src=/media/topics-1-shorten2.gif></img>
+  <br><i>Topic Modeling with Embedding, to show how similar lessons can be grouped for specific user interests. </i>
+</p>
+
+Tag the Lessons with specific topics, to generate more signal for the recommender.
+
+### Why Recommenders?
+
+Prototype: Sparse Matrix Factorization
+
+Pros: quick, reliable when signal is reliable (enough user activity)
+
+Cons: bad with limited data on new users (cold start), inputs restricted to User and Items matrix
+
+Production: Deep Neural Network
+
+---
+## The Data Pipeline, in Detail
 
 My Research has centered on the most important app use case of uplading a lesson and recommending it to users if their activity implies it'd be relevent to them.
 
@@ -108,53 +153,6 @@ Here’s How:
 8. These predicted ratings are sorted to find the highest ratings
 
 9. When a user opens their feed, these lessons are suggested to them first
-
-## ML components
-
-### User Generated Lessons and NLP Topic Modeling
-
-When a user uploads a lesson:
-Model and Embed Word Tokens and Latent Topics of Lessons, to Understand the Content
-(through NLP, LDA, word embeddings, and a Neural Network)
-
-Doing so allows the app to group similar lessons together, on the fly, enabling:
-User Specific Recommendations based on Activity and Lesson Preferences 
-(through Matrix Factorization and Deep Neural Network)
-
-
----
-### Why NLP?
-
-topic modeling
-checking for duplicate lesson (hashing tokens)
-
-Prototype: LDA
-
-Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
-
-<p align="center">
-  <img src=/media/overview-1-shorten2.gif></img>
-  <br><i>Embedding Space using TensorBoard Project</i>
-</p>
-
-<p align="center">
-  <img src=/media/topics-1-shorten2.gif></img>
-  <br><i>Topic Modeling with Embedding, to show how similar lessons can be grouped for specific user interests. </i>
-</p>
-
-Tag the Lessons with specific topics, to generate more signal for the recommender.
-
-### Why Recommenders?
-
-Prototype: Sparse Matrix Factorization
-
-Pros: quick, reliable when signal is reliable (enough user activity)
-
-Cons: bad with limited data on new users (cold start), inputs restricted to User and Items matrix
-
-Production: Deep Neural Network
-
----
 
 Takeaways:
 
