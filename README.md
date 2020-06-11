@@ -76,7 +76,7 @@ Here’s How:
 4. User ratings and lesson activity are made available for the recommender model
 
 <p align="center">
-  <img src=/media/user_activity.png width='50%' height='20%'>
+  <img src=/media/user_activity.png width='25%' height='20%'>
   <i>Users give thumbs up (1) or thumbs down ratings (-1), for explicit feedback for the recommender.
 </p>
 
