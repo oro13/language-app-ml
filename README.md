@@ -77,7 +77,7 @@ Here’s How:
 
 <p align="center">
   <img src=/media/user_activity.png width='25%' height='20%'>
-  <i>Users give thumbs up (1) or thumbs down ratings (-1), for explicit feedback for the recommender.</i>
+  <br><i>Users give thumbs up (1) or thumbs down ratings (-1), for explicit feedback for the recommender.</i>
 </p>
 
 5. The recommender gets an input of these and other features about the users and lessons
