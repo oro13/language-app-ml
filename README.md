@@ -97,6 +97,12 @@ Here’s How:
 
 6. The recommender gets an input of these and other features about the users and lessons
 
+<p align="center">
+  <img src=/media/tf_rec_summary.png width='90%' height='auto'>
+  <i>The layers of the Tensorflow Neural Network Recommender</i>
+</p>
+
+
 7. The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
 
 8. These predicted ratings are sorted to find the highest ratings
