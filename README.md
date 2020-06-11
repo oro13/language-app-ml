@@ -99,7 +99,7 @@ Here’s How:
 
 <p align="center">
   <img src=/media/tf_rec_summary.png width='90%' height='auto'>
-  <i>The layers of the Tensorflow Neural Network Recommender</i>
+  <br><i>The layers of the Tensorflow Neural Network Recommender</i>
 </p>
 
 
