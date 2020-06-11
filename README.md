@@ -74,6 +74,12 @@ Here’s How:
 </p>
 
 4. User ratings and lesson activity are made available for the recommender model
+
+<p align="center">
+  <img src=/media/user_activity.png width='100%' height='auto'>
+  <i>Users give thumbs up (1) or thumbs down ratings (-1), for explicit feedback for the recommender.
+</p>
+
 5. The recommender gets an input of these and other features about the users and lessons
 6. The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
 7. These predicted ratings are sorted to find the highest ratings
