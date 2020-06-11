@@ -68,6 +68,11 @@ Here’s How:
 
 2. NLP for processing the text and discerning the lesson topics
 3. The lesson specific word and topic embeddings are available for the recommender model
+
+<p align="center">
+  <img src=/media/pylda_vis.gif width='90%' height='50%'>
+</p>
+
 4. User ratings and lesson activity are made available for the recommender model
 5. The recommender gets an input of these and other features about the users and lessons
 6. The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
