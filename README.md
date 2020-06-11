@@ -1,25 +1,38 @@
-# Machine Learning Enhanced Language Learning App
+# Totlahtol, an app for learning languages
+## Enhanced with Machine Learning Features
 
-### FELI GENTLE
+### FELI GENTLE, [Machine Learning Engineer](https://github.com/oro13)
 
+In collaboration with
 
-<p align="center">
-  <img src=/media/login.gif width='90%' height='50%'>
-</p>
+### ARMAND VILLAVERDE, [Data Engineer, Full Stack Dev](https://github.com/xochozomatli)
 
-Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
-My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components.
+---
 
-Tech used:
+Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent and in Central America.
+
+My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components. Including, natural language processing of user generated content and a recommender of lessons based on user interests.
+
+Tech Stack Tools:
 
 Front End 
-• React JS
-• Flask
+• [React JS](https://github.com/facebook/react)
+• [Flask](https://github.com/pallets/flask)
 
 Back End 
-• SQLAlchemy
-• Keras/Tensorflow
-• Python/Numpy/Pandas
+• [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy)
+• [Keras/Tensorflow](https://github.com/keras-team/keras)
+• [Python](https://github.com/python/)
+• [Numpy](https://github.com/numpy/numpy)
+• [Pandas](https://github.com/pandas-dev/pandas)
+
+The app (prototype) in action:
+
+<p align="center">
+  <img src=/media/app_prototype.gif width='90%' height='auto'>
+  <br><i>A user logins in, adds a lesson, and gets lessons specifically curated to their interests</i>
+</p>
+
 
 
 ### Why NLP? Why Recommenders?
