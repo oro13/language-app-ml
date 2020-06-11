@@ -76,7 +76,7 @@ Here’s How:
 4. User ratings and lesson activity are made available for the recommender model
 
 <p align="center">
-  <img src=/media/user_activity.png width='65%' height='50%'>
+  <img src=/media/user_activity.png width='50%' height='20%'>
   <i>Users give thumbs up (1) or thumbs down ratings (-1), for explicit feedback for the recommender.
 </p>
 
@@ -102,7 +102,7 @@ User Specific Recommendations based on Activity and Lesson Preferences
 ### Why NLP?
 
 topic modeling
-checking for duplicate lesson (hasing tokens)
+checking for duplicate lesson (hashing tokens)
 
 Prototype: LDA
 
