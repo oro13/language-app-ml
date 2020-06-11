@@ -1,4 +1,5 @@
-# Machine Learning Enhanced Language Learning App
+# Totlahtol, an app for learning languages
+## Enhanced with Machine Learning Features
 
 ### FELI GENTLE, [Machine Learning Engineer](https://github.com/oro13)
 
