@@ -7,6 +7,8 @@ In collaboration with
 
 ### ARMAND VILLAVERDE, [Data Engineer, Full Stack Dev](https://github.com/xochozomatli)
 
+---
+
 Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent and in Central America.
 
 My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components. Including, natural language processing of user generated content and a recommender of lessons based on user interests.
