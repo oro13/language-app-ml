@@ -78,7 +78,7 @@ Here’s How:
 
 3. The lesson specific word and topic embeddings are available for the recommender model
 <p align="center">
-  <img src=/media/tf_embedding_board.png width='25%' height='20%'>
+  <img src=/media/tf_embedding_board.png width='80%' height='auto'>
   <br><i>TensorBoard diagram of Word2Vec Embedding Process.</i>
 </p>
 
