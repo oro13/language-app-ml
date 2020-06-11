@@ -4,7 +4,9 @@
 
 
 <p align="center">
-  <img src=/media/login.gif width='90%' height='50%'>
+  <img src=/media/app_prototype.gif width='90%' height='50%'>
+  <br>The app in action.
+  <br>A user logins in, adds a lesson, and gets lessons specifically curated to their interests.
 </p>
 
 Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
