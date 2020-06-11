@@ -2,15 +2,17 @@
 
 ### FELI GENTLE
 
+Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
+My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components.
+
+The app (prototype) in action:
 
 <p align="center">
   <img src=/media/app_prototype.gif width='90%' height='auto'>
-  <br>The app in action.
-  <br>A user logins in, adds a lesson, and gets lessons specifically curated to their interests.
+  <br><i>A user logins in, adds a lesson, and gets lessons specifically curated to their interests</i>
 </p>
 
-Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
-My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components.
+
 
 Tech used:
 
