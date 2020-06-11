@@ -132,16 +132,11 @@ Recommender Process:
 2. user specific scoring of items
 3. reranking, or sorting the items based on relevance to the user
 
-How we implemented it in flask:
-
-~Suggestions for how to demonstrate?~
-
-
 Takeaways:
 
-Learned a number of libraries, such as Keras/Tensorflow, Gensim, and worked with more familiar Pandas and Numpy, and NLTK
+Learned a number of libraries, such as Keras/Tensorflow, and worked with more familiar with creating custom functions in Pandas and Numpy, and text processing and NLP in GenSim and NLTK
 
-Faced the Challenge of working remotely with the software engineer, my friend, in a different time zone, and had to iteratively adjust the app to implement changes
+Faced the Challenge of working remotely with the software engineer, my friend, in a different time zone, and had to iteratively adjust the app to implement changes.
 
 Got experience working with machine learning in a production web development environment; being the domain expert to recommend best practice for performance and scalability; had to weigh trade offs of having a fast working prototype and implementing the best available solutions for a given task, faced this at nearly every step; sometimes making prototype is the clear priority, but some best practices shouldn’t be compromised, and found that out the hard way when late in the project decided to reimplement many features using Keras/Tensorflow to achieve state of the art recommendation, like those seen on Youtube, and FaceBook.
 
