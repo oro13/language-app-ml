@@ -108,16 +108,16 @@ Prototype: LDA
 
 Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
 
-Embedding Space
+
 
 <p align="center">
   <img src=/media/overview-1-shorten2.gif></img>
+  <br><i>Embedding Space using TensorBoard Project</i>
 </p>
-
-Topic Modeling with Embedding
 
 <p align="center">
   <img src=/media/topics-1-shorten2.gif></img>
+  <br><i>Topic Modeling with Embedding, to show how similar lessons can be grouped for specific user interests. </i>
 </p>
 
 Tag the Lessons with specific topics, to generate more signal for the recommender.
