@@ -1,35 +1,51 @@
-# language_app_ml
+# Machine Learning Enhanced Language Learning App
 
+### FELI GENTLE
 
-FELI GENTLE
-
-Totlahtol Language App
 
 <p align="center">
   <img src=/media/login.gif width='90%' height='50%'>
 </p>
 
-Machine Learning Components (Prototype Development, Research)
+Our app, Totlahtol, is named for the word ‘Languages,’ in Nahuatl: the Aztec language once widely spoken on this continent. 
+My friend in El Paso began working on this application over a year ago. Now I’m helping him enhance the prototype with advanced Machine Learning components.
 
-Implementing Machine Learning Features in a Language App;
+Tech used:
 
-Using Natural Language Processing for Topic Modeling to Understand the Content of User Uploaded Lessons; Using Matrix Factorization and Deep Neural Networks to Make User Specific Recommendations based on Activity and Preferences
+Front End 
+• React JS
+• Flask
 
-*Totlahtol* Languages in Nahuatl, the once widely spoken Aztec ‘Lingua Franca’. 
+Back End 
+• SQLAlchemy
+• Keras/Tensorflow
+• Python/Numpy/Pandas
 
-My friend in El Paso began working on this application over a year ago; now I’m helping him bring it to fruition. To help the App stand out, we are making a prototype enhanced with machine learning components. We hope it will excel in for user enjoyment and  provide effective language instruction.
 
-While there are many Language Apps out there, few, if any, harness the power of combining: 
+### Why NLP? Why Recommenders?
 
- - User Generated Lessons, 
- - Machine Learning accelerated Recommendation of Content specific to User interests and activity, and a 
- - interactive, social-network driven user interface for a personalized immersion the target language. 
- 
-Totlahtol aims to deliver on all these and more.
+While there are many Language Apps available, 
+Totlahtol stands out by offering:
+
+- User Generated Lessons, 
+- Recommendation of Content specific to User interests and activity, 
+- A seamless, interactive user interface to immerse users in the target language. 
+
+
+Whether you’re the type of polyglot who speaks Spanish and French or the kind who speaks Python and Javascript, feel free to reach out to learn more.
+
+---
 
 ## The Data Pipeline
 
 My Research has centered on the most important app use case of uplading a lesson and recommending it to users if their activity implies it'd be relevent to them.
+
+
+Here’s How:
+
+<p align="center">
+  <img src=/media/uml-basic.png width='90%' height='50%'>
+</p>
 
 1. A user uploads a lesson
 
@@ -47,19 +63,26 @@ My Research has centered on the most important app use case of uplading a lesson
 
 ## ML components
 
-**User Generated Lessons and NLP**
+### User Generated Lessons and NLP Topic Modeling
 
-...
-Why NLP?
+When a user uploads a lesson:
+Model and Embed Word Tokens and Latent Topics of Lessons, to Understand the Content
+(through NLP, LDA, word embeddings, and a Neural Network)
+
+Doing so allows the app to group similar lessons together, on the fly, enabling:
+User Specific Recommendations based on Activity and Lesson Preferences 
+(through Matrix Factorization and Deep Neural Network)
+
+
+---
+### Why NLP?
 
 topic modeling
 checking for duplicate lesson (hasing tokens)
 
-
 Prototype: LDA
 
 Production: lda2Vec, word2vec, multilingual embeddings, Deep Neural Network, consider Rust HuggingFace tokenizers for speed
-
 
 Embedding Space
 
@@ -73,12 +96,9 @@ Topic Modeling with Embedding
   <img src=/media/topics-1-shorten2.gif></img>
 </p>
 
-            
-**ML Recommender**
+Tag the Lessons with specific topics, to generate more signal for the recommender.
 
-Why Recommenders?
-
-...what's available
+### Why Recommenders?
 
 Prototype: Sparse Matrix Factorization
 
@@ -88,14 +108,18 @@ Cons: bad with limited data on new users (cold start), inputs restricted to User
 
 Production: Deep Neural Network
 
-### Recommendation
-recommendation systems consist of 3 key stages:
+Recommender Process:
 
 1. item candidate generation
 2. user specific scoring of items
 3. reranking, or sorting the items based on relevance to the user
 
+How we implemented it in flask:
 
+~Suggestions for how to demonstrate?~
+
+
+Takeaways:
 
 Learned a number of libraries, such as Keras/Tensorflow, Gensim, and worked with more familiar Pandas and Numpy, and NLTK
 
@@ -103,69 +127,5 @@ Faced the Challenge of working remotely with the software engineer, my friend, i
 
 Got experience working with machine learning in a production web development environment; being the domain expert to recommend best practice for performance and scalability; had to weigh trade offs of having a fast working prototype and implementing the best available solutions for a given task, faced this at nearly every step; sometimes making prototype is the clear priority, but some best practices shouldn’t be compromised, and found that out the hard way when late in the project decided to reimplement many features using Keras/Tensorflow to achieve state of the art recommendation, like those seen on Youtube, and FaceBook.
 
-
 If interested in knowing more about the application, whether you’re the type of polyglot who speaks Spanish and French or the kind who speaks Python and Javascript, feel free to reach out! We intend to keep working on the app until we have a deliverable prototype.
-
-
-
-Tech used:
-
-Front End 
-• React JS
-• Flask
-• 
-Back End 
-• SQLAlchemy
-• Keras/Tensorflow
-• Python/Numpy/Pandas
-
-Project links: 
-[Link github repos and demos here]
-
-
-overview:
-
-
-
-recommender pipeline:
-
-    user 1 (uploader) uploads lesson
-    topic model lesson content according to large word2vec embedding matrix
-        'projector' visualization of topic model (explain how neighbors are calculated for topics)
-            https://projector.tensorflow.org/
-        explain advantages of using word embedding to find latent topics, vs first attempt with LDA
-    store tags with lesson
-        show how 2 lessons are considered similar vs 2 that are considered different based on score/latent topics
-    user 2 (learner), opens the home screen, prompting a query
-    candidate items lessons are prompted (double check position)
-        dnn that takes into account user activity likes/dislikes AND the corresponding lesson tags (latent topics + uploader gen tags), in different layers
-        possible other models that filter out spam/clickbait/offensive content
-    candidate items are ranked on a common scale, taking their different scoring metrics into account
-
-    items are reordered according to this rank
-
-    rerun models every so often to include recent user activity, promotes freshness, diversity of content
-        use warm start to avoid retraining entirely (eg for matrix factorization warm start the previously seen embeddings)
-    optimize recommender by including different input information such as geographical/demographic info to ensure users see fresh content on new topics
-
-App specific considerations:
-
-    unveil certain supported languages gradually, after enough quality content has been contributed during an 'alpha' testing period
-    watch for fairness metrics concerning latent biases in content and recommendations, particularly in languages from areas with ethnic conflict, hegemonic power struggles/propaganda, etc
-    seek expert advice
-    make models specifically for 'average users' of different clusters,
-        consider demographics and observe quality of recommendation
-    include content from underrespresented groups in corpus so low volume deters it from being considered
-
-Questions I'm walking away with:
-
-Offline embedding matrix, warm start subsampling
-
-lda2vec plus word2vec
-
-querying for recommendations best practices candidate generation, user specific scoring in efficient time, reranking
-
-when to rerun the model
-In [ ]:
-
 
