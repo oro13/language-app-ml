@@ -37,7 +37,7 @@ The app (prototype) in action:
 
 
 
-### Why NLP? Why Recommenders?
+### Do we need another language app?
 
 While there are many Language Apps available, 
 Totlahtol stands out by offering:
