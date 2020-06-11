@@ -75,23 +75,33 @@ Here’s How:
 </p>
 
 2. NLP for processing the text and discerning the lesson topics
+
 3. The lesson specific word and topic embeddings are available for the recommender model
+<p align="center">
+  <img src=/media/tf_embedding_board.png width='25%' height='20%'>
+  <br><i>TensorBoard diagram of Word2Vec Embedding Process.</i>
+</p>
+
+4. Common lessons are grouped together by topic
 
 <p align="center">
   <img src=/media/pylda_vis.gif width='90%' height='50%'>
 </p>
 
-4. User ratings and lesson activity are made available for the recommender model
+5. User ratings and lesson activity are made available for the recommender model
 
 <p align="center">
   <img src=/media/user_activity.png width='25%' height='20%'>
   <br><i>Users give thumbs up (1) or thumbs down ratings (-1), for explicit feedback for the recommender.</i>
 </p>
 
-5. The recommender gets an input of these and other features about the users and lessons
-6. The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
-7. These predicted ratings are sorted to find the highest ratings
-8. When a user opens their feed, these lessons are suggested to them first
+6. The recommender gets an input of these and other features about the users and lessons
+
+7. The recommender, a combination of deep neural network and matrix factorization, returns the probable ratings for lessons each user has not seen yet
+
+8. These predicted ratings are sorted to find the highest ratings
+
+9. When a user opens their feed, these lessons are suggested to them first
 
 ## ML components
 
